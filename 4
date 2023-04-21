@@ -1,0 +1,63 @@
+execute_script 1
+
+
+
+import data.Output
+import exeptions.*
+import org.koin.core.context.startKoin
+import org.koin.dsl.module
+import utils.*
+import java.io.FileNotFoundException
+import java.util.*
+
+/**
+ * Файл для запуска программы
+ */
+fun main() {
+    val koinModule = module {
+        single { Stack<String>() }
+        single { Validator() }
+        single { VehicleCollection(get()) }
+
+    }
+    startKoin {
+        modules(koinModule)
+    }
+    var fileName: String?
+    do {
+        print("Enter file name: ")
+        fileName = readlnOrNull()
+        if (fileName == null) {
+            println("Invalid input. Please enter a valid file name.")
+        }
+    } while (fileName == null)
+
+    try {
+        VehicleCollection.fromFile(fileName)
+    } catch (e: FileNotFoundException) {
+        println("File not found. Please enter a valid file name.")
+        main()
+        return
+    }
+
+    val printer = ConsolePrinter()
+    val commandExecutor = CommandExecutor(printer)
+    val commandParser = CommandParser(commandExecutor)
+
+    printer.println(Output.Welcome)
+    printer.println(Output.Enter_help)
+
+    while (true) {
+        printer.print("> ")
+        val commandLine = readlnOrNull() ?: break
+
+        try {
+            val commandResult = commandParser.parseAndExecute(commandLine)
+            commandResult?.let { printer.println(it) }
+        } catch (e: CommandException) {
+            e.message?.let { printer.println(it) }
+        } catch (e: IllegalArgumentException) {
+            e.message?.let { printer.println(it) }
+        }
+    }
+}
