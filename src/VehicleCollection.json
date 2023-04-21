@@ -1,0 +1,119 @@
+[
+  {
+    "id": 606240528,
+    "name": "trf",
+    "coordinates": {
+      "x": 49,
+      "y": 79
+    },
+    "creationDate": "2023-04-20T19:57:41.1391923",
+    "enginePower": 4,
+    "distanceTravelled": 7.0,
+    "type": "SUBMARINE",
+    "fuelType": "NUCLEAR"
+  },
+  {
+    "id": 1419757840,
+    "name": "trf",
+    "coordinates": {
+      "x": 49,
+      "y": 79
+    },
+    "creationDate": "2023-04-20T19:57:41.1401914",
+    "enginePower": 4,
+    "distanceTravelled": 7.0,
+    "type": "SUBMARINE",
+    "fuelType": "NUCLEAR"
+  },
+  {
+    "id": 1059597933,
+    "name": "trf",
+    "coordinates": {
+      "x": 49,
+      "y": 79
+    },
+    "creationDate": "2023-04-20T19:57:41.1401914",
+    "enginePower": 4,
+    "distanceTravelled": 7.0,
+    "type": "SUBMARINE",
+    "fuelType": "NUCLEAR"
+  },
+  {
+    "id": 1576625284,
+    "name": "trf",
+    "coordinates": {
+      "x": 49,
+      "y": 79
+    },
+    "creationDate": "2023-04-20T19:57:41.1401914",
+    "enginePower": 4,
+    "distanceTravelled": 7.0,
+    "type": "SUBMARINE",
+    "fuelType": "NUCLEAR"
+  },
+  {
+    "id": 1770659283,
+    "name": "trf",
+    "coordinates": {
+      "x": 49,
+      "y": 79
+    },
+    "creationDate": "2023-04-20T19:57:41.1401914",
+    "enginePower": 4,
+    "distanceTravelled": 7.0,
+    "type": "SUBMARINE",
+    "fuelType": "NUCLEAR"
+  },
+  {
+    "id": 1927639816,
+    "name": "trf",
+    "coordinates": {
+      "x": 49,
+      "y": 79
+    },
+    "creationDate": "2023-04-20T19:57:41.1391923",
+    "enginePower": 4,
+    "distanceTravelled": 7.0,
+    "type": "SUBMARINE",
+    "fuelType": "NUCLEAR"
+  },
+  {
+    "id": 1904629140,
+    "name": "trf",
+    "coordinates": {
+      "x": 49,
+      "y": 79
+    },
+    "creationDate": "2023-04-20T19:57:41.1401914",
+    "enginePower": 4,
+    "distanceTravelled": 7.0,
+    "type": "SUBMARINE",
+    "fuelType": "NUCLEAR"
+  },
+  {
+    "id": 2009403304,
+    "name": "trf",
+    "coordinates": {
+      "x": 49,
+      "y": 79
+    },
+    "creationDate": "2023-04-20T19:57:41.1376758",
+    "enginePower": 4,
+    "distanceTravelled": 7.0,
+    "type": "SUBMARINE",
+    "fuelType": "NUCLEAR"
+  },
+  {
+    "id": 1635511546,
+    "name": "trf",
+    "coordinates": {
+      "x": 49,
+      "y": 79
+    },
+    "creationDate": "2023-04-20T19:57:41.1391923",
+    "enginePower": 4,
+    "distanceTravelled": 7.0,
+    "type": "SUBMARINE",
+    "fuelType": "NUCLEAR"
+  }
+]
