@@ -1,7 +1,9 @@
+import data.Output
+import exeptions.CommandException
 import org.koin.core.context.startKoin
 import org.koin.dsl.module
-import utils.Validator
-import utils.VehicleCollection
+import utils.*
+import java.io.FileNotFoundException
 import java.util.*
 
 fun main() {
@@ -17,6 +19,31 @@ fun main() {
     }
     startKoin {
         modules(koinModule)
+    }
+    val printer = ConsolePrinter()
+    val commandExecutor = CommandExecutor(printer)
+    val commandParser = CommandParser(commandExecutor)
+
+    printer.println(Output.Welcome)
+//    printer.println(Output.File_Path)
+//    val fileName = readln()
+    printer.println(Output.Enter_help)
+//    val fileName = readln() ?: "VehicleCollection.json"
+
+    while (true) {
+        printer.print("> ")
+        val commandLine = readlnOrNull() ?: break
+
+        try {
+            val commandResult = commandParser.parseAndExecute(commandLine)
+            commandResult?.let { printer.println(it) }
+        } catch (e: CommandException) {
+            e.message?.let { printer.println(it) }
+        } catch (e: FileNotFoundException) {
+            e.message?.let { printer.println(it) }
+        } catch (e: IllegalArgumentException) {
+            e.message?.let { printer.println(it) }
+        }
     }
 
 }
