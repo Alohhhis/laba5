@@ -48,5 +48,3 @@ class CommandExecutor(printer: Printer) {
         return commandMap
     }
 }
-{
-}
