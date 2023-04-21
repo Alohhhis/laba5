@@ -8,8 +8,7 @@ import javax.xml.validation.Validator
 /**
  * Абстрактный класс, определяющий команды.
  */
-//TODO IMPORT KOIN, для KoinComponent,
-// который позволяет использовать инъекцию зависимостей с помощью библиотеки Koin.
+
 abstract class Command: KoinComponent {
     val validator: Validator by inject()
     val VehicleCollection: VehicleCollection by inject()

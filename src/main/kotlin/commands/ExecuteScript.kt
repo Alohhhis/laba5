@@ -12,6 +12,10 @@ import java.util.*
  * Класс ExecuteScript читает и выполняет команды из указанного файла.
  *
  */
+
+/**
+ *
+ */
 class ExecuteScript(
     private val commandParser: CommandParser,
     private val printer: Printer,
@@ -24,6 +28,9 @@ class ExecuteScript(
         return ExecuteScript(commandParser, printer, nestedLevel)
     }
 
+    /**
+     *
+     */
     override fun execute(args: List<Any>): String {
 
         val fileName = args[0] as String

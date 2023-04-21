@@ -13,6 +13,6 @@ data class Vehicle(
     // Значение этого поля должно генерироваться автоматически
     val enginePower: Int,//Значение поля должно быть больше 0
     val distanceTravelled: Double,//Значение поля должно быть больше 0
-    val type: VehicleType,//Поле может быть null
-    val fuelType: FuelType,//Поле может быть null
+    val type: VehicleType?,//Поле может быть null
+    val fuelType: FuelType?,//Поле может быть null
 )

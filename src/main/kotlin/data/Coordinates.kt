@@ -8,6 +8,6 @@ import kotlinx.serialization.Serializable
 
 @Serializable
 data class Coordinates(
-    val x: Long,//Поле не может быть null
-    val y: Double//Максимальное значение поля: 297, Поле не может быть null
+    val x: Int,//Поле не может быть null
+    val y: Long//Максимальное значение поля: 297, Поле не может быть null
 )

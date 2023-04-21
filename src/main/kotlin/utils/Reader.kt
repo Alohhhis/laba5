@@ -4,7 +4,6 @@ import data.*
 import exeptions.ValidationException
 import java.time.LocalDateTime
 import java.util.*
-import javax.xml.validation.Validator
 
 /**
  * Класс, считываюзий вводимые значения пользователя
